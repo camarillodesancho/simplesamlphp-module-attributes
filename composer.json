@@ -1,17 +1,30 @@
+
+
 {
-    "name": "mimaen/simplesamlphp-module-hubandspoke",
-    "description": "SimpleSAMLphp utilities for Hub & Spoke federations",
+    "name": "simplesamlphp/simplesamlphp-module-hubandspoke",
+    "description": "Obtención atributo eduPersonTargetedID.",
     "type": "simplesamlphp-module",
+    "keywords": ["simplesamlphp", "hubandspoke", "SAML", "SimpleSAMLphp", "Hub-and-Spoke", "IdP", "SP", "eduPersonTargetedId"],
+    "version": "2.0.0",
     "license": "LGPL-2.1",
     "authors": [
         {
             "name": "Miguel Macías Enguídanos",
             "email": "mimaen@inf.upv.es"
+        },
+        {
+            "name": "Miguel Milla Arregui", 
+            "email": "miguel@ual.es"
         }
     ],
-    "keywords": ["SAML", "SimpleSAMLphp", "Hub-and-Spoke", "IdP", "SP", "eduPersonTargetedId"],
-    "minimum-stability": "dev",
     "require": {
-        "simplesamlphp/composer-module-installer": "~1.0"
+        "php": "^8.0",
+        "simplesamlphp/simplesamlphp": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleSAML\\Module\\hubandspoke\\": "src/"
+        }
     }
 }
+
